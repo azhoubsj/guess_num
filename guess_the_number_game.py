@@ -1,6 +1,10 @@
 #guess the number name
 import random
-num = random.randint(1, 100)
+start = input('请决定随机数字范围开始值：')
+end = input('请决定随机数字范围结束值：')
+start = int(start)
+end = int(end)
+num = random.randint(start, end)
 count = 0
 while True:
 	count += 1 # count = count +1
